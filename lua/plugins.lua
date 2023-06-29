@@ -99,4 +99,5 @@ return require('packer').startup(function(use)
     use { "beauwilliams/focus.nvim" }
 
     use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
+    -- use { 'github/copilot.vim' }
 end)
