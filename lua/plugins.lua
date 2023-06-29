@@ -97,7 +97,4 @@ return require('packer').startup(function(use)
         -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
     }
     use { "beauwilliams/focus.nvim" }
-
-    use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
-    -- use { 'github/copilot.vim' }
 end)
