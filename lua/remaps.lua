@@ -1,12 +1,12 @@
 -- easier file navigation with automatic centering
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "K", "<C-u>zz")
+vim.keymap.set("n", "J", "<C-d>zz")
 
 vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<C-s>", ":w<cr>")
 
-vim.keymap.set("n", "<esc>", ":noh<cr>", {silent = true})
+vim.keymap.set("n", "<esc>", ":noh<cr>", { silent = true })
 
 -- faster window navigation
 vim.keymap.set("n", "<C-J>", "<C-W>j")
