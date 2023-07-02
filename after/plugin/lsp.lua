@@ -41,8 +41,8 @@ local cmp_mappings = {
     ["<Tab>"] = cmp.mapping.confirm({ select = true }),
 
     -- Navigate between snippet placeholder
-    ['<C-p>'] = cmp_action.luasnip_jump_forward(),
-    ['<C-n>'] = cmp_action.luasnip_jump_backward(),
+    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
 }
 
 cmp.setup({
