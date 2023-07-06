@@ -1,6 +1,8 @@
 -- easier file navigation with automatic centering
 vim.keymap.set("n", "K", "<C-u>zz")
 vim.keymap.set("n", "J", "<C-d>zz")
+vim.keymap.set("v", "K", "<C-u>zz")
+vim.keymap.set("v", "J", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "G", "Gzz")
