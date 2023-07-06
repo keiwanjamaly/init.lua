@@ -3,6 +3,7 @@ vim.keymap.set("n", "K", "<C-u>zz")
 vim.keymap.set("n", "J", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "G", "Gzz")
 
 vim.keymap.set("n", "Q", "<nop>")
 
