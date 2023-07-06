@@ -70,3 +70,4 @@ null_ls.setup({
 
 -- require 'lspconfig'.texlab.setup {}
 require 'lspconfig'.clangd.setup {}
+require 'lspconfig'.hls.setup {}
