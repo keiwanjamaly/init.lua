@@ -97,4 +97,20 @@ return require('packer').startup(function(use)
         -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
     }
     use { "beauwilliams/focus.nvim" }
+
+    use { "tpope/vim-repeat" }
+    -- use { "ggandor/lightspeed.nvim" }
+    use { "wellle/targets.vim" }
+
+    -- use({
+    --     "jackMort/ChatGPT.nvim",
+    --     config = function()
+    --         require("chatgpt").setup()
+    --     end,
+    --     requires = {
+    --         "MunifTanjim/nui.nvim",
+    --         "nvim-lua/plenary.nvim",
+    --         "nvim-telescope/telescope.nvim"
+    --     }
+    -- })
 end)
