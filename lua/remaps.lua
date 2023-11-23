@@ -24,4 +24,4 @@ vim.api.nvim_set_keymap('n', '<leader>j', '<C-w>s<C-j>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>k', '<C-w>s', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>v<C-l>', { silent = true })
 
-vim.api.nvim_set_keymap('n', '<leader>v', 'v$o_', { silent = true })
+vim.api.nvim_set_keymap('n', '<leader>v', '_v$h', { silent = true })
