@@ -33,5 +33,8 @@ return {
 				"-synctex=1",
 			},
 		}
+		-- vim.g.vimtex_imaps_leader = ","
+		-- vim.g.vimtex_syntax_enabled = 1
+		-- vim.g.vimtex_imaps_enabled = 1
 	end,
 }

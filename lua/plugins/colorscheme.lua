@@ -1,6 +1,11 @@
+-- return {
+--    "bluz71/vim-moonfly-colors", name = "moonfly" , config = function()
+-- 	vim.cmd [[colorscheme moonfly]]
+--   end
+-- }
 return {
-   "bluz71/vim-moonfly-colors", name = "moonfly" , config = function() 
-	vim.cmd [[colorscheme moonfly]]
-  end
+	"rebelot/kanagawa.nvim",
+	config = function()
+		vim.cmd([[colorscheme kanagawa]])
+	end,
 }
-

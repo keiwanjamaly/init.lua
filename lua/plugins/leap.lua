@@ -1,6 +1,10 @@
 return {
 	"ggandor/leap.nvim",
 	config = function()
-		require("leap").create_default_mappings()
+		-- redefine forward and backward moving commands
+		vim.keymap.set({ "n" }, "f", "<Plug>(leap-forward)")
+		vim.keymap.set({ "n" }, "F", "<Plug>(leap-backward)")
+		vim.keymap.set({ "n" }, "t", "<Plug>(leap-forward-to)")
+		vim.keymap.set({ "n" }, "T", "<Plug>(leap-backward-to)")
 	end,
 }
