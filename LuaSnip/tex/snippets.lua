@@ -22,7 +22,7 @@ return {
 		t("}"),
 	}),
 	s({
-		trig = "\\left(",
+		trig = "lrb",
 		wordTrig = false,
 		dscr = "Expands 'left()' into 'left(  \right)'",
 		snippetType = "autosnippet",
