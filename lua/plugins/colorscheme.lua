@@ -6,6 +6,16 @@
 return {
 	"rebelot/kanagawa.nvim",
 	config = function()
-		vim.cmd([[colorscheme kanagawa]])
+		vim.cmd("colorscheme kanagawa-wave")
+		vim.g.personal_color_scheme = "black"
+		vim.keymap.set("n", "<leader>c", function()
+			if vim.g.personal_color_scheme == "black" then
+				vim.cmd("colorscheme kanagawa-lotus")
+				vim.g.personal_color_scheme = "not black"
+			else
+				vim.cmd("colorscheme kanagawa-wave")
+				vim.g.personal_color_scheme = "black"
+			end
+		end, {})
 	end,
 }
