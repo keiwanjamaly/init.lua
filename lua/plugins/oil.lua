@@ -1,11 +1,13 @@
 return {
-	'stevearc/oil.nvim',
+	"stevearc/oil.nvim",
 	opts = {},
 	-- Optional dependencies
-	dependencies = { "nvim-tree/nvim-web-devicons" }, 
+	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		require("oil").setup({
-            columns = {},
+			columns = {},
+			skip_confirm_for_simple_edits = true,
+			delete_to_trash = true,
 			use_default_keymaps = false,
 			keymaps = {
 				["g?"] = false, --"actions.show_help",
@@ -27,9 +29,13 @@ return {
 			view_options = {
 				-- Show files and directories that start with "."
 				show_hidden = true,
+				natural_order = true,
+				is_always_hidden = function(name, _)
+					return name == ".." or name == ".git" or name == ".DS_Store"
+				end,
 			},
 		})
 
 		vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
-	end
+	end,
 }
