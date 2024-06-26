@@ -1,8 +1,12 @@
 return {
-	'nvim-focus/focus.nvim',
+	"nvim-focus/focus.nvim",
 	opts = {},
 	-- Optional dependencies
 	config = function()
-		require("focus").setup({hybridnumber = true})
-	end
+		require("focus").setup({
+			ui = {
+				hybridnumber = true,
+			},
+		})
+	end,
 }
