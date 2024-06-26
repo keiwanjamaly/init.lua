@@ -67,3 +67,6 @@ The [comment](https://github.com/numToStr/Comment.nvim) plugin is configured in 
 2. c/cpp
 3. cmake [must be installed manually](https://github.com/cheshirekow/cmake_format)
 4. sh (the formatter must be installed manually)
+
+### lualine
+[lualine](https://github.com/nvim-lualine/lualine.nvim) for a nice statusline
