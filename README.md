@@ -1,33 +1,38 @@
 ## Keymaps
 
 - 'K/J' as well as '<C-u>/<C-d>' move up and down in the Buffer and centeres the cursor position.
+- `-` opens up the file explorer and goes to the parent directory
+- `<C-r>` refreshes the directory
+- Movement:
+    1. '<C-h>' left
+    2. '<C-j>' down
+    3. '<C-k>' up
+    4. '<C-l>' right
+- Telescope:
+    1. `<leader>ff` fuzzy find files
+    2. `<leader>fg` fuzzy find grep content inside files
+    3. `<leader>fh` fuzzy find help files
 
 
-## Plugins
+## Installed Plugins
 ### colorscheme
 The colorscheme used here are the [vim moonfly colors](https://github.com/bluz71/vim-moonfly-colors)
 
 ### oil
-[Oil](https://github.com/stevearc/oil.nvim) a file explorer for vim, which allows you to edit files like a vim buffer. 
-It is configured, such that 
-- `-` opens up the file explorer and goes to the parent directory
-- `<C-r>` refreshes the directory
+[Oil](https://github.com/stevearc/oil.nvim) a file explorer for vim, which allows you to edit files like a vim buffer.
+It is configured, such that
 
 ### focus
-[Focus](https://github.com/nvim-focus/focus.nvim) automatically resizes the window pane. There are no keys configured here. 
+[Focus](https://github.com/nvim-focus/focus.nvim) automatically resizes the window pane. There are no keys configured here.
 
 ### brackets
-There are three plugins handling bracket behaviour 
-1. [autoclode](https://github.com/m4xshen/autoclose.nvim) 
-2. [nvim-surround](https://github.com/kylechui/nvim-surround) 
+There are three plugins handling bracket behaviour
+1. [autoclode](https://github.com/m4xshen/autoclose.nvim)
+2. [nvim-surround](https://github.com/kylechui/nvim-surround)
 
 ### nvim-tmux-navigator
-The [nvim-tmux-navigator](https://github.com/alexghergh/nvim-tmux-navigation) allows for a fast navigation between tmux and neovim panes. 
+The [nvim-tmux-navigator](https://github.com/alexghergh/nvim-tmux-navigation) allows for a fast navigation between tmux and neovim panes.
 The keybindings are
-1. '<C-h>' left
-2. '<C-j>' down
-3. '<C-k>' up
-4. '<C-l>' right
 
 The tmux config must containt following code
 ```
@@ -55,6 +60,10 @@ The [comment](https://github.com/numToStr/Comment.nvim) plugin is configured in 
 
 ### telescope
 [Telescope](https://github.com/nvim-telescope/telescope.nvim) quickly allows to look up files. It's keybindings are
-1. `<leader>ff` fuzzy find files
-2. `<leader>fg` fuzzy find grep content inside files
-3. `<leader>fh` fuzzy find help files
+
+### formatter
+[Formatter](https://github.com/mhartington/formatter.nvim) is currently configured to the languages
+1. lua
+2. c/cpp
+3. cmake [must be installed manually](https://github.com/cheshirekow/cmake_format)
+4. sh (the formatter must be installed manually)
