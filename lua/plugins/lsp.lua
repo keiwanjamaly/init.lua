@@ -9,6 +9,7 @@ return {
 			require("lspconfig").jedi_language_server.setup({})
 			require("lspconfig").jedi_language_server.setup({})
 			require("lspconfig").bashls.setup({})
+			require("lspconfig").cmake.setup({})
 			-- require("lspconfig").ast_grep.setup({})
 		end,
 	},
