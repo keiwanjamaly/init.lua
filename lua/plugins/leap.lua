@@ -1,5 +1,5 @@
 return {
-	"ggandor/leap.nvim",
+    url = "https://codeberg.org/andyg/leap.nvim",
 	config = function()
 		-- redefine forward and backward moving commands
 		vim.keymap.set({ "n" }, "f", "<Plug>(leap-forward)")

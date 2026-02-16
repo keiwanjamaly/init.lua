@@ -3,8 +3,6 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			require("lspconfig").clangd.setup({})
-			require("lspconfig").hls.setup({})
-			require("lspconfig").tsserver.setup({})
 			require("lspconfig").lua_ls.setup({})
 			require("lspconfig").jedi_language_server.setup({})
 			require("lspconfig").bashls.setup({})
