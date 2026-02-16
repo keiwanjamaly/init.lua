@@ -2,12 +2,14 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			require("lspconfig").clangd.setup({})
-			require("lspconfig").lua_ls.setup({})
-			require("lspconfig").jedi_language_server.setup({})
-			require("lspconfig").bashls.setup({})
-			require("lspconfig").cmake.setup({})
-			-- require("lspconfig").ast_grep.setup({})
+			vim.lsp.enable({
+				"clangd",
+				"lua_ls",
+				"jedi_language_server",
+				"bashls",
+				"cmake",
+				-- "ast_grep",
+			})
 		end,
 	},
 	{
